@@ -1,0 +1,57 @@
+<div id="typing-effect-container" style="font-family: 'Source Code Pro', monospace; font-size: 2vw; white-space: nowrap; overflow: hidden; border-right: 2px solid white; padding: 10px; line-height: 1.6; color: white; width: 90%; max-width: 100%; font-weight: bold;"></div>
+
+<script>
+  const textToType = `
+Welcome to SHART-IT 
+“A fart may start it, but a shart finishes the job.”
+
+What is SHART-IT?
+
+SHART-ITis the unapologetic tribute to life’s most unexpected moments.
+Forget fancy, polished cryptos—SHART-ITis here to celebrate the glorious
+ chaos of those "oops" moments that keep us human (and laughing). 
+
+Why SHART-IT?
+
+Because every accidental shart deserves its day in the sun. SHART-IT 
+isn’t just a coin; it’s a revolution—a cheeky, messy, and proudly
+unfiltered movement that reminds us all to own the chaos. 
+
+How to Get SHART-IT:
+1. Step One: Embrace your inner SHART.
+2. Step Two: Follow our roadmap (coming soon).
+3. Step Three: Join the SHART-IT community and 
+let your SHART be heard.
+
+Roadmap:
+Phase 1: Meme
+Phase 2: Vibe and HODL
+Phase 3: Meme Takeover
+
+Join the Toot Movement:
+
+Ready to toot your way to the top? Follow us on 
+Twitter, join the discussion on Telegram, and let’s 
+make some noise!
+
+SHART-IT – Where every SHART counts.
+  `;
+
+  const typingSpeed = 10; // Kecepatan mengetik (ms per karakter)
+  const container = document.getElementById('typing-effect-container');
+
+  let index = 0;
+
+  function typeText() {
+    if (index < textToType.length) {
+      container.innerHTML += textToType[index] === '\n' ? '<br>' : textToType[index];
+      index++;
+      setTimeout(typeText, typingSpeed);
+    }
+  }
+
+  typeText();
+</script>
+
+<!-- Link ke Google Fonts untuk Source Code Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
